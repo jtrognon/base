@@ -117,6 +117,6 @@ a{
 
 #exemple_text-shadow{
     /*préciser orientation horizontal, vertical et rayon propagation + couleur ombre;*/
-    text-shadow : 1px 10px 40px rgb(0, 240, 0);
-    text-shadow : -1px 10px 10px rgb(3, 3, 255);
+    text-shadow : 1px 10px 40px yellow;
+    text-shadow : -1px 10px 10px pink;
 }
