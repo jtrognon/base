@@ -4,8 +4,12 @@ body{
 
 .div1{
     background-color : #088;
-    width: 500px;
+    width: 25%;
     padding: 20px;
-    border : 20px solid greenyellow;
-    margin: 50px;
+    border: 20px solid limegreen;
+    margin : 35px;
+}
+
+#droite{
+    text-align: right;
 }
