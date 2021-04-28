@@ -122,3 +122,14 @@ a{
     le premier s'annule*/
 }
 
+#line-height{
+    line-height : 40px;
+}
+
+#letter-spacing{
+    letter-spacing : 2px; /* peut être négatif*/
+}
+
+#word-spacing{
+    word-spacing: 10px;
+}
