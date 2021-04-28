@@ -1,0 +1,122 @@
+body{
+    background-color : rgb(26, 26, 26); /*couleur de fond*/
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*h1{
+    font-size: 80px;
+    color: rgb(143, 0, 0);
+    font-size: italic;
+}
+
+p{
+    color: navy;
+    font-weight: bold; mettre en gras
+}
+*/
+
+#p1{
+    color: green;
+}
+
+.p1{
+    color:rgb(255, 104, 129);
+}
+
+.important{
+    color: red; /*un attribut class peut être utilisé plusieurs fois alors
+    qu'un id ne doit être utilisé qu'une seule fois*/
+}
+
+#p2{
+    font-weight : bold; /*un élément peut comporter une class et un id en même temps*/
+}
+
+.exemple_heritage{
+    color:green;
+}
+
+a{
+    color : rgb(29, 29, 255);
+    text-decoration : none;
+}
+
+#exemple_block{
+    border: 1px solid white;
+}
+
+#exemple_inline{
+    border : 1px solid red;
+}
+
+#exemple_div{
+    background-color :rgb(255, 104, 129);
+    font-weight : bold;
+}
+
+#exemple_span{
+    background-color :rgb(255, 102, 0);
+    color :rgb(29, 29, 255);
+}
+
+#exemple_font-size_absolu{
+    font-size : 20px;
+}
+
+#exemple_font-size_relatif{
+    font-size : 150%;
+}
+
+.font-style_normal{
+    font-style : normal;
+}
+
+.font-style_italic{
+    font-style : italic;
+}
+
+.font-style_oblic{
+    font-style: oblique;
+}
+
+.font-style_inherit{
+    font-style:inherit;
+}
+
+#font-weight_exemple{
+    font-weight : 700; /*valeurs en dessous de 400 == pas souvent supportée*/
+}
+
+#exemple_opacité{
+    color: RGBa(255, 255, 255, 0.5); /*0 == transparent, 1 == complétement visible opacité == 0 à 1; */
+}
+
+#exemple_opacité2{
+    opacity : 0.25;
+}
+
+#exemple_text-align{
+    /* left, right, center, justify, inherit*/
+    text-align: center;
+}
+
+#exemple_text-transform{
+    /*lowercase, uppercase, capitalize (= 1re lettre de chque mot), inherit, none */
+    text-transform : uppercase;
+}
+
+#exemple_text-decoration{
+    /* underline, overline, line-trough, inherit, initial, none*/
+    text-decoration:line-through;
+}
+
+#exemple_text-indent{
+    text-indent: 100px; /*ne marche pas si utilisé text-align*/
+}
+
+#exemple_text-shadow{
+    /*préciser orientation horizontal, vertical et rayon propagation + couleur ombre;*/
+    text-shadow : 1px 10px 40px green;
+    text-shadow : -1px 10px 10px navy;
+}

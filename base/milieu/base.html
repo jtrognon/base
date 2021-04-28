@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--le titre de la page-->
+        <title>
+            base
+        </title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <style>
+            h1{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <!--titre : -->
+        <h1 class = "important", id = "HTML">
+            HTML <!--h1-->
+        </h1>
+
+        <!--un paragraphe
+        et un autre-->
+
+        <a href="#CSS">CSS</a>
+        <p> 
+            <!--<br> == saut de ligne-->
+            coucou toi !!!<br> ça va ?
+        </p>
+
+        <h2>
+            <!--les espaces ne s'afficherons pas-->
+            réponse       : (h2)
+        </h2>
+
+        <p>
+            ouaip
+        </p>
+
+        <h3>
+            coucou h3
+        </h3>
+
+        <p> HTML == language de balisage</p>
+        <hr> <!--une ligne va appparraitre
+             pour marquer la séparation-->
+        <p>CSS == language de styles</p>
+
+        <hr>
+
+        <p>faite pas attention à moi</p>
+        <h3 id="ancre2"> je suis la deuxième ancre</h3>
+
+        <h4>
+            c'est h4
+        </h4>
+
+        <pre>
+            j'utilise la balise pre 
+                est je m'affiche
+            exactement        comme je m'écrit
+            mais je dois être utilisé
+             le moins possible 
+        </pre>
+        <h5>
+            moi h5
+        </h5>
+
+        <p>
+            <!--utiliser strong et em pour 
+            signifier le degrée d'importance
+            et non pour mettre en gras ou en 
+            italique -->
+            <strong>je suis strong</strong>
+            donc très important
+            <br>
+            et moi <em> je suis em</em>
+            donc relativement important
+
+        </p>
+        <h6>
+            et moi h6
+        </h6>
+        <p>
+            <mark>contenu marqué</mark>
+        </p>
+        <a href="http://youtube.com">Lien vers youtube</a>
+        <img src="logo HTML.png" alt="Une image">
+
+        <h2>
+            liste ordonnée, non-ordonnée et descriptive/de
+            définition
+        </h2>
+        <h3> Une petite liste non-ordonnée</h3>
+        <!--affiche puces-->
+
+        <ul>
+            <li>premier élément de liste</li>
+            <li>deuxième élément de liste</li>
+            <li>et le troisième</li>
+        </ul>
+
+        <h3>Une petite liste ordonnée</h3>
+        <!--suit un ordre
+        et affiche des chiffres, peut être changer avec
+        i; I; a; A; 1;-->
+        <ol type="I"> <!--liste avec lettres minuscule-->
+            <li>Intro</li>
+            <li>premier</li>
+            <li>deuxième</li>
+            <li>troisième</li>
+            <li>fin</li>
+        </ol>
+
+        <h3>une petite liste de définition/description</h3>
+        <dl>
+            <dt>terme à définir : pomme</dt>
+            <dd>c'est un fruit et/ou un légumme </dd>
+            <dt>le vélo</dt>
+            <dd>c'est un moyen de transport</dd>
+        </dl>
+
+        <h3> une petite liste imbriquée</h3>
+
+        <ol>
+            <li> Partie I
+                <ul>
+                    <li>pomme</li>
+                    <li>poire</li>
+                </ul>
+            </li>
+            <li>Partie II
+                <dl>
+                    <dt>coucou</dt>
+                    <dd>dire bonjour</dd>
+                </dl>
+            </li>
+            <li>Partie III
+                <ol type="a">
+                    <li>partie a</li>
+                    <li>partie b</li>
+                </ol>
+            </li>
+
+        </ol>>
+
+        <h2>lien interne et externe</h2>
+        <h3>lien externe</h3>
+
+        <p>
+            cliquez <a href="https://youtube.com"> ici</a>
+            <!--lien qui ne redirige pas sur une autre page
+                 du site mais sur un site externe-->
+            pour aller sur la page d'accueil de youtube
+        </p>
+
+        <h3> Liens Interne</h3>
+
+        <p>
+            liste de liens:
+            <dl>
+                <dt>page du milieu</dt>
+                <dd>clique <a href="milieu.html" target="_blank">ici</a></dd>
+                <!-- la page s'ouvrira dans une nouvelle fenêtre-->
+
+                <dt>page sous</dt>
+                <dd>clique <a href="sous/sous.html">ici</a></dd>
+
+                <dt>page sous-sous</dt>
+                <dd>clique <a href="sous/sous2/sous2.html">ici</a></dd>
+
+                <dt>page parent</dt>
+                <dd>clique <a href="../parent.html">ici</a></dd>
+
+                <dt>page parent-parent</dt>
+                <!--<dd>clique <a href="../../HTML/parent2.html">ici</a></dd>
+                    ne marche pas -->
+            </dl>
+        </p>
+
+        <h2>Nouveaux types de liens</h2>
+
+        <h3> Les ancres</h3>
+
+        <p class="important">
+            clique sur ce lien
+            <br> juste <a href="#ancre1">ici</a>
+            pour aller à ancre 1
+            <br>et juste <a href="#ancre2"> là</a> 
+            pour aller à l'ancre 2 <!--pour aller à un endroit précis
+            très utile pour les sommaires-->
+        </p>
+        <h3 id="ancre1">Une première ancre</h3>
+
+        <h3>lien pour l'envoie d'un mail</h3>
+
+        <p>
+            je m'envoie un mail
+            juste <a href = "mailto:julietrognon74@gmail.com">là</a>
+        </p>
+
+        <h3>lien pour télécharger un fichier</h3>
+
+        <p id="p1">télécharge mon fichier
+            <br>
+            premier lien <a href = "logo HTML.png" download>ici</a><!--permet de télécharger tout
+            les types de fichiers mais ne marche pas avec certains 
+            naviagteurs comme safaris
+            solution pas donnée -> chercher sur un forum-->
+            
+            <br>
+
+            deuxième lien <a href = "logo HTML.png">ici</a> <!--les fichiers html s'ouvriront
+            automatiquement et ne se téléchargeront pas-->
+        </p>
+
+        <h3>insérer des images</h3>
+        <p class = "important", id = "p2">jpg = divise le poid d'une image par 10 tout en
+            conservant une très bonne qualitée
+            <br>
+            png gère la transparance, il a une très bon
+            taux de compression et conserve bonne qualitée 
+            image
+            <br>
+            gif = très vieux format à ne pas utiliser sauf pour
+            format annimé
+            <br>
+            bmp = format à ne pas utiliser car mauvaise conversion
+            => image très lourde
+            <hr>
+        </p>
+        <img src ="logo HTML.png" alt="logo HTML">
+
+        <p class="p1"> <!--on peut utiliser définir un id et une class avec le même nom sans qu'il soit confondu-->
+            la même photo mais depuis un lien <br> => à éviter
+        </p>
+        <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.imagesource.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRio.jpg&f=1&nofb=1" alt = "logo html">
+    
+        <h2>comptabilité code</h2>
+        <h3>Entitées HTML utiles</h3>
+        <p>
+            ne pas utiliser de chevron ouvrant et ferment
+            <br>
+            Exemple:
+            <br> l'élément br s'écrit comme ceci <br> <!--ne marche pas pareil pour <ceci> par exemple-->
+                par contre ça ça marche &lt;br&gt;
+                <br>
+                ce symbole sécrit comme ça : &amp;
+                je créer beaucoup d'espaces :
+                <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp il y a beaucoup d'espaces ici
+        </p>
+
+        <h3>Outils permettant de tester la validitée du code</h3>
+
+        <p>
+            W3C : <a href = "https://validator.w3.org/" target = "_blank"> HTML</a>
+            W3C : <a href = "https://jigsaw.w3.org/css-validator/" target = "_blank">CSS</a>
+        </p>
+
+        <h1 id = "CSS", class = "important">CSS</h1>
+
+        <a href ="#HTML">HTML</a>
+        <h2>sélecteur CSS</h2>
+        <p>cibler des éléments html pour appliquer un style
+            <br> utilisation de sélecteur simple pour l'instant
+            grande majorité selecteur simple  = sélecteur élément car il prenne nom type élément <br>
+            prorpiété = qu'es ce qu'on veut modifier <br>
+            color = modifier couleur texte<br>
+            propriété est accompagnée d'une ou plusieurs valeures qui définit comportement <br>
+
+        </p>
+
+        <h2>Endroit où écrire le code CSS</h2>
+        <p style = "color : green;">
+            <ul>
+                <li>écrire dans un élément html style dans l'élément &lt;head&gt;</li>
+                <li>écrire dans balise ouvrante élément html</li>
+                <li>écrire dans un fichier séparé : recommandé</li>
+            </ul>
+        </p>
+
+        <h2 class = "important">héritage CSS</h2>
+        <p>
+            les éléments dans body hérite des propriétés de body
+        </p>
+
+        <h2> différents types d'éléments HTML</h2>
+        <dl>
+            <dt>block</dt>
+            <dd>ex : p, p, liste, forme, div <br> commence toujours sur nouvelle ligne et prend toute la laregeur <br>
+            il peut contenir des éléments de types block et inline</dd>
+            <dt>inline</dt>
+            <dd>ex : strong , em, a, img, span<br> inline ne commence pas sur une nouvelle ligne et s'insère dans ligne actuelle</dd>
+        </dl>
+
+        <p>
+            chaque éléments HTML est soit de type block soit de type inline
+        </p>
+
+        <h3>Exemple : </h3>
+        <p id = "exemple_block">
+            je suis un élément de type <strong id = "exemple_inline">block</strong>
+        </p>
+
+        <h2>découverte éléments html div et span</h2>
+
+        <dl>
+            <dt>div</dt>
+            <dd>élément block, utiliser comme conteneurs pour éléments HTML</dd>
+            <dt>span</dt>
+            <dd>élément inline, utiliser comme conteneur pour éléments textuel <br> utile pour mettre en forme une portion de texte</dd>
+        </dl>
+
+        <p>éléments div et span ne possède aucune valeures sémantique (= n'apporte pas de sens à un contenu) <br> 
+            éviter de s'en servir, trouver d'autre solutions <br>
+            ils servent de conteneurs, facilite page html niveau css
+        </p>
+
+        <h3> Exemple div : </h3>
+
+        <div id = "exemple_div">
+            <p>élément p est un élément de type block</p>
+            <p>Un <strong> autre</strong>paragraphe</p>
+        </div>
+        
+        <h3> Exemple inline : </h3>
+        
+        <p>
+            je suis un paragraphe, <span id = "exemple_span">blup</span>
+        </p>
+
+        <h2>Police d'écriture CSS</h2>
+
+        <h3>font-family</h3>
+        <p>
+            je suis un paragraphe
+        </p>
+        <h4>et moi un titre</h4>
+
+        <h3>google font</h3>
+
+        <p>le site de google dédié : <a href = "https://www.google.com/fonts" target = "_blank">ici</a></p>
+
+        <h2>Les propriétés de type "font"</h2>
+
+        <h3>font-size</h3>
+        <p>
+            j'utilise <span id = "exemple_font-size_absolu">font-size absolu(fixe)</span> <br>
+             et font-size <span id = "exemple_font-size_relatif">relatif</span> <!--moins facile à gérer : un texte peut dépasser la page-->
+        </p>
+
+        <h3>font-style</h3>
+        <p>
+            font-style accepte 4 valeurs différentes : <span class = "font-style_normal">normal</span>, <span class = "font-style_italic">italic</span>,
+             <span class = "font-style_oblic">oblic</span>, <span class = "font-style_inherit">inherit</span> (= hérite de ses parents)
+        </p>
+
+        <h3>font-weight</h3>
+        <p id = "font-weight_exemple">
+            permet de définir le poid d'une police (= épaisseur)
+        </p>
+
+        <h2>Gérer opacité</h2>
+
+        <div id = "exemple_opacité"> je gère mon opacité madame</div>
+        <div id = "exemple_opacité2">ma transparence en gros</div>
+
+        <h2>propriétés de type "text"</h2>
+
+        <p id = "exemple_text-align">text align</p>
+        <p>
+        <span id = "exemple_text-transform">text transform</span>
+        <br> <span id = "exemple_text-decoration">text decoration</span> <br>
+        <span id = "exemple_text-shadow">text-shadow</span>
+        </p>
+
+        <p id = "exemple_text-indent">text indent</p>
+
+    </body>
+</html>
