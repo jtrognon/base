@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 150px;
+  grid-template-areas:
+    "a a a"
+    "b b c"
+    "d e e"
+    "f f f";
+}
+
+/* select the first element of .block*/
+.bloc:nth-child(1) {
+  background: teal;
+  grid-area: a;
+}
+
+.bloc:nth-child(2) {
+  background: darkgoldenrod;
+  grid-area: b;
+}
+
+.bloc:nth-child(3) {
+  background: darkred;
+  grid-area: c;
+}
+
+.bloc:nth-child(4) {
+  background: darkgreen;
+  grid-area: d;
+}
+
+.bloc:nth-child(5) {
+  background: darkslateblue;
+  grid-area: e;
+}
+
+.bloc:nth-child(6) {
+  background: darkolivegreen;
+  grid-area: f;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 200px 250px 200px;
+    grid-template-areas:
+      "b b a a"
+      "b b c d"
+      "f e e e"
+      "f e e e";
+  }
+}
